@@ -59,5 +59,11 @@ def edit_game(game_id):
     game = games_collection.find_one({'_id': ObjectId(game_id)})
     return render_template('edit_game.html', game=game)
 
+@app.route('/delete/<game_id>', methods=['POST'])
+def delete_game(game_id):
+    """Delete a game."""
+    games_collection.delete_one({'_id': ObjectId(game_id)})
+    return redirect(url_for('index'))
+
 if __name__ == '__main__':
   app.run(debug=True, host='0.0.0.0', port=os.environ.get('PORT', 5000))

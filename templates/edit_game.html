@@ -6,7 +6,7 @@
 
 <h1>Edit Game</h1>
 
-<form action="/new-game" method="POST">
+<form action="/edit/{{game._id}}" method="POST">
     Name of game: <input type="text" name="name" value="{{game.name}}"><br>
     Price of game: <input type="number" name="price" value="{{game.price}}"><br>
     Image URL: <input type="text" name="img_url" value="{{game.img_url}}"><br>
