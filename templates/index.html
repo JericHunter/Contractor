@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>OGXB</h1>
+
+<a href="/new-game">New Game</a>
+
+<ul>
+{% for game in games %}
+
+    <li>
+        <a href="/game/{{game._id}}">{{game.name}}</a>
+    </li>
+
+{% endfor %}
+</ul>
+
+{% endblock %}
