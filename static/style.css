@@ -1,0 +1,26 @@
+body {
+  background-image:url('ogxb.png');
+}
+
+.gamegrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: 10px 5px;
+  grid-gap: 15px;
+  justify-content: center;
+
+}
+
+h1{
+    color:white;
+    text-align: center;
+}
+.newgame{
+    color:white;
+}
+.backtohome{
+    color:white;
+}
+.gamename{
+    color:white;
+}

@@ -4,16 +4,16 @@
 
 <h1>OGXB</h1>
 
-<a href="/new-game">New Game</a>
+<a href="/new-game" class="newgame">New Game</a>
 
-<ul>
+
 {% for game in games %}
-
-    <li>
-        <a href="/game/{{game._id}}">{{game.name}}</a>
-    </li>
+    <div class="gamegrid">
+        <a href="/game/{{game._id}}" class="gamename">{{game.name}}</a>
+        <img src="{{game.img_url}}" style="width:250px;height:200px;">
+    </div>
 
 {% endfor %}
-</ul>
+
 
 {% endblock %}
