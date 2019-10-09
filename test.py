@@ -2,6 +2,18 @@ from unittest import TestCase, main as unittest_main, mock
 from bson.objectid import ObjectId
 from app import app
 
+sample_game_id = ObjectId('5d9d0ac88ded608339cde1db')
+sample_game = {
+    'name': 'Fable',
+    'price': '30',
+    'img_url': 'https://images-na.ssl-images-amazon.com/images/I/51SGSEAEHKL.jpg'
+}
+sample_game_data = {
+    'name': sample_game['name'],
+    'price': sample_game['price'],
+    'img_url': sample_game['img_url']
+}
+
 class GameTests(TestCase):
     """Flask tests."""
 
