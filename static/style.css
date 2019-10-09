@@ -1,26 +1,34 @@
+title{
+    text-align: center;
+}
 body {
   background-image:url('ogxb.png');
+  text-align: center;
+  color:white;
 }
 
 .gamegrid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2.5, 1fr);
   grid-template: 10px 5px;
   grid-gap: 15px;
   justify-content: center;
+  display: inline-block;
 
 }
 
-h1{
+/* h1{
     color:white;
     text-align: center;
-}
+} */
 .newgame{
     color:white;
+    text-align: center;
 }
 .backtohome{
     color:white;
 }
 .gamename{
     color:white;
+    /* text-align: center; */
 }

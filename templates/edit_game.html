@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<a href="/">Back to Home</a>
+<a href="/" class="backtohome">Back To Home</a>
 
 <h1>Edit Game</h1>
 
 <form action="/edit/{{game._id}}" method="POST">
-    Name of game: <input type="text" name="name" value="{{game.name}}"><br>
+    Name of Game: <input type="text" name="name" value="{{game.name}}"><br>
     Price of game: <input type="number" name="price" value="{{game.price}}"><br>
     Image URL: <input type="text" name="img_url" value="{{game.img_url}}"><br>
     <button type="submit">Submit</button><br>

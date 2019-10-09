@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<h1>OGXB</h1>
-
-<a href="/new-game" class="newgame">New Game</a>
-
-
-{% for game in games %}
+<div>
+    <h1>OGXB</h1>
+</div>
+<div>
+    <a href="/new-game" class="newgame">New Game</a>
+    <br>
+    <ul>
+    {% for game in games %}
     <div class="gamegrid">
+        <img src="{{game.img_url}}" style="width:200px;height:275px;">
+        <br>
         <a href="/game/{{game._id}}" class="gamename">{{game.name}}</a>
-        <img src="{{game.img_url}}" style="width:250px;height:200px;">
     </div>
 
-{% endfor %}
-
-
+    {% endfor %}
+    </ul>
+</div>
 {% endblock %}
