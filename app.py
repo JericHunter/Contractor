@@ -20,7 +20,7 @@ def index():
 @app.route('/new-game')
 def new_game():
     """Return new game creation page."""
-    return render_template('new_game.html')
+    return render_template('new_game.html', title='New Game')
 
 @app.route('/new-game', methods=['POST'])
 def create_game():
