@@ -1,0 +1,1 @@
+A basic store website made with Flask, Jinja and MongoDB with CRUD on items with a searchbar that let's you search off keywords instead of fully matching names. In my project I have original xbox games that I have added in my website with price included as well as a picture.
